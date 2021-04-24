@@ -40,6 +40,8 @@ conversation follows GUID format (e.g. 5d4f1723-4f23-4086-bf91-00b1e58da7f8).
 ### 6. run virtual human https://gitlab.com/uneeq-oss/examples/-/tree/master/web/node. 
 For somethow, I cannot run this using local server. After npm star, I opened the index.html local file using browser. For example, open file://.../index.html
 
+![image](https://user-images.githubusercontent.com/901975/115944758-5c228200-a4ea-11eb-8cab-a979f8b73020.png)
+
 ### 7. Create Google slide and edit app script
 ![image](https://user-images.githubusercontent.com/901975/115943933-5b3b2180-a4e5-11eb-9acc-3504e5e27cd8.png)
 
