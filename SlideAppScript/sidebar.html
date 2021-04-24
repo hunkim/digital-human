@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+  </head>
+  <body>
+    <form class="sidebar">
+      <div class="block" id="button-bar">
+        <button class="blue" id="do-speak">Speak</button>
+      </div>
+      <h5 class="error" id="error"></h5>
+    </form>
+   
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('#do-speak').click(readNote);
+      });
+
+      /**
+       * Runs a server-side function to speak
+       */
+      function readNote() {
+        this.disabled = true;
+        $('#error').text('');
+        google.script.run
+            .withSuccessHandler(function(noteText, element) {
+              element.disabled = false;
+              $('#error').empty().append(noteText);              
+             })
+            .withFailureHandler(function(error, element) {
+              element.disabled = false;
+              $('#error').text('Something went wrong. Please check the add-on logs.' + error.message);
+            })
+            .withUserObject(this)
+            .readNoteAndSpeak();          
+      }
+    </script>
+  </body>
+</html>
