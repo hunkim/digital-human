@@ -1,8 +1,10 @@
+
 # digital-human
 I created this to make lecture videos using digital human. Concept is quite simple.
 ![image](https://user-images.githubusercontent.com/901975/115944140-8ffba880-a4e6-11eb-9422-e59626f9fe60.png)
 
 See the quick demo video:
+![vh-talk](https://user-images.githubusercontent.com/901975/115944207-f84a8a00-a4e6-11eb-8120-68196a8d2788.gif)
 https://user-images.githubusercontent.com/901975/115944150-98ec7a00-a4e6-11eb-911b-294aaea79741.mp4
 
 
